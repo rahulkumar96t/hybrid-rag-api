@@ -1,0 +1,49 @@
+[project]
+name = "hybrid-rag-api"
+version = "0.1.0"
+description = "Retrieval-augmented question answering over Markdown, text and PDF: BM25 + dense retrieval fused with RRF, cited answers from Claude, SSE streaming."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["rag", "retrieval", "bm25", "embeddings", "fastapi", "claude"]
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=2.3.0",
+    "fastapi>=0.162.0",
+    "numpy>=2.2",
+    "pydantic>=2.14",
+    "pypdf>=6.21.4",
+    "python-multipart>=0.0.20",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+hybrid-rag-api = "hybrid_rag_api:main"
+
+[project.optional-dependencies]
+fastembed = [
+    "fastembed>=0.9.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.3,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.2",
+    "ruff>=0.17",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["live: calls the real Claude API (opt-in, needs ANTHROPIC_API_KEY and RUN_LIVE_TESTS=1)"]

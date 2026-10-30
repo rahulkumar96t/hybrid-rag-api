@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Generated data (local indexes, downloaded embedding models)
+data/
+*.sqlite
+*.sqlite-journal
+.fastembed_cache/
+local_cache/

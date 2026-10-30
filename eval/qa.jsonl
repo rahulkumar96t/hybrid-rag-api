@@ -1,0 +1,40 @@
+{"id": "q01", "question": "Which storage backends can the server use?", "relevant": [{"doc": "overview", "section": "Architecture"}, {"doc": "configuration", "section": "Storage"}]}
+{"id": "q02", "question": "Do workers connect to the database directly?", "relevant": [{"doc": "overview", "section": "Architecture"}]}
+{"id": "q03", "question": "Is message ordering guaranteed within a queue?", "relevant": [{"doc": "overview", "section": "When not to use"}]}
+{"id": "q04", "question": "In which order do workers pick queues with different priorities?", "relevant": [{"doc": "overview", "section": "Core concepts"}]}
+{"id": "q05", "question": "What PostgreSQL version is required?", "relevant": [{"doc": "installation", "section": "Requirements"}]}
+{"id": "q06", "question": "How do I run the server under systemd?", "relevant": [{"doc": "installation", "section": "Linux"}]}
+{"id": "q07", "question": "Can database migrations be undone after an upgrade?", "relevant": [{"doc": "installation", "section": "Upgrading"}]}
+{"id": "q08", "question": "Can workers run an older version than the server during an upgrade?", "relevant": [{"doc": "installation", "section": "Upgrading"}]}
+{"id": "q09", "question": "How can I check that the config file is valid and the database reachable?", "relevant": [{"doc": "installation", "section": "Verifying"}]}
+{"id": "q10", "question": "What has higher precedence, an environment variable or the config file?", "relevant": [{"doc": "configuration", "section": "Configuration sources"}]}
+{"id": "q11", "question": "What port does the HTTP API listen on by default?", "relevant": [{"doc": "configuration", "section": "Server"}]}
+{"id": "q12", "question": "How long are finished jobs kept before they are deleted?", "relevant": [{"doc": "configuration", "section": "Retention"}]}
+{"id": "q13", "question": "How many jobs does one worker process run in parallel by default?", "relevant": [{"doc": "configuration", "section": "Workers"}]}
+{"id": "q14", "question": "How many times is a failing job attempted by default?", "relevant": [{"doc": "retries", "section": "Retry policy"}]}
+{"id": "q15", "question": "What is the longest delay between two retry attempts?", "relevant": [{"doc": "retries", "section": "Backoff"}]}
+{"id": "q16", "question": "Why is randomness added to the wait before retrying?", "relevant": [{"doc": "retries", "section": "Backoff"}]}
+{"id": "q17", "question": "How does a handler tell Tidewater not to retry a failure?", "relevant": [{"doc": "retries", "section": "Retryable and permanent"}]}
+{"id": "q18", "question": "Which exit code marks a temporary failure?", "relevant": [{"doc": "retries", "section": "Retryable and permanent"}]}
+{"id": "q19", "question": "How do I send a dead job back to its queue?", "relevant": [{"doc": "retries", "section": "Dead-letter"}]}
+{"id": "q20", "question": "Can a cron schedule fire at a granularity of seconds?", "relevant": [{"doc": "scheduling", "section": "Cron expressions"}]}
+{"id": "q21", "question": "What happens to scheduled runs that were missed while the server was offline?", "relevant": [{"doc": "scheduling", "section": "Missed runs"}]}
+{"id": "q22", "question": "What happens if a schedule triggers while the previous run is still executing?", "relevant": [{"doc": "scheduling", "section": "Overlapping"}, {"doc": "release-notes"}]}
+{"id": "q23", "question": "How are daylight saving time transitions handled?", "relevant": [{"doc": "scheduling", "section": "Time zones"}]}
+{"id": "q24", "question": "Which token scope does a worker need?", "relevant": [{"doc": "security", "section": "API tokens"}]}
+{"id": "q25", "question": "How do I replace an API token without downtime?", "relevant": [{"doc": "security", "section": "Rotating"}]}
+{"id": "q26", "question": "Where should credentials needed by a job be stored?", "relevant": [{"doc": "security", "section": "Secrets"}]}
+{"id": "q27", "question": "Which metric shows how many jobs are waiting in a queue?", "relevant": [{"doc": "observability", "section": "Metrics"}]}
+{"id": "q28", "question": "Which endpoint should a load balancer use as a readiness probe?", "relevant": [{"doc": "observability", "section": "Health checks"}]}
+{"id": "q29", "question": "How do I export traces to an OpenTelemetry collector?", "relevant": [{"doc": "observability", "section": "Tracing"}]}
+{"id": "q30", "question": "A job has been leased for an hour, what is going on?", "relevant": [{"doc": "troubleshooting", "section": "leased state"}]}
+{"id": "q31", "question": "How do I fix 'database is locked' errors?", "relevant": [{"doc": "troubleshooting", "section": "database is locked"}]}
+{"id": "q32", "question": "Worker processes use more and more RAM over time, what can I do?", "relevant": [{"doc": "troubleshooting", "section": "memory"}]}
+{"id": "q33", "question": "Which release removed the --listen flag?", "relevant": [{"doc": "release-notes"}]}
+{"id": "q34", "question": "What is the default lease timeout?", "relevant": [{"doc": "troubleshooting", "section": "leased state"}]}
+{"id": "u01", "question": "What is the maximum payload size for a single job?", "answerable": false}
+{"id": "u02", "question": "How much does an enterprise license cost?", "answerable": false}
+{"id": "u03", "question": "What is the capital of Australia?", "answerable": false}
+{"id": "u04", "question": "Recommend a good pizza recipe", "answerable": false}
+{"id": "u05", "question": "Who founded the company behind Kubernetes?", "answerable": false}
+{"id": "u06", "question": "Explain the photosynthesis process in plants", "answerable": false}

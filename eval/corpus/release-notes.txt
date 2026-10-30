@@ -1,0 +1,12 @@
+Tidewater release notes (fictional)
+
+Version 2.4 added the PostgreSQL connection pool setting storage.max_connections and the
+/readyz endpoint. It also changed the default overlap policy for schedules from queue to
+skip, so schedules that relied on overlapping runs must now set overlap = "queue"
+explicitly.
+
+Version 2.3 introduced secret references (secret://name) for job payloads and the
+tidewater doctor command. It removed the deprecated --listen flag; use --server-listen or
+the server.listen setting instead.
+
+Version 2.2 was the first release with a published container image.
